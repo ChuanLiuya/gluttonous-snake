@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dksjv74tr55xk"]
+
+[ext_resource type="Texture2D" uid="uid://cay1tjv8udeap" path="res://Assets/snake.png" id="1_m2dko"]
+
+[node name="Body" type="Sprite2D" unique_id=397519233]
+texture = ExtResource("1_m2dko")
+hframes = 8
+vframes = 8
