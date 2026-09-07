@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cay1tjv8udeap" path="res://Assets/snake.png" id="1_dv8q4"]
 [ext_resource type="Script" uid="uid://c0da3ud38ll68" path="res://scripts/snake/head.gd" id="2_saf8f"]
 [ext_resource type="Script" uid="uid://b15tdft5txs7s" path="res://scripts/utils/state/state_machine.gd" id="3_iv478"]
+[ext_resource type="Script" uid="uid://ciske0tqa23aw" path="res://scripts/snake/states/snake_move_state.gd" id="4_q34ia"]
 
 [node name="Head" type="Sprite2D" unique_id=1563200515]
 texture = ExtResource("1_dv8q4")
@@ -13,3 +14,6 @@ script = ExtResource("2_saf8f")
 
 [node name="StateMachine" type="Node" parent="." unique_id=1493911876]
 script = ExtResource("3_iv478")
+
+[node name="Move" type="Node" parent="StateMachine" unique_id=1411147447]
+script = ExtResource("4_q34ia")
