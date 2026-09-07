@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://ds47m2yc2md1g"]
 
+[ext_resource type="Script" uid="uid://d1s07jydryuoa" path="res://scenes/levels/level_test.gd" id="1_c4dmb"]
 [ext_resource type="PackedScene" uid="uid://b4gi6ki4cthwj" path="res://scenes/snake/head.tscn" id="1_v7xnt"]
+[ext_resource type="PackedScene" uid="uid://ltx0gxi5wo6m" path="res://scenes/managers/BeatManager.tscn" id="2_3e10n"]
 
 [node name="Main" type="Node2D" unique_id=1241698638]
+script = ExtResource("1_c4dmb")
 
 [node name="Head" parent="." unique_id=1563200515 instance=ExtResource("1_v7xnt")]
 position = Vector2(8, 8)
+
+[node name="BeatManager" parent="." unique_id=1297566017 groups=["beat_manager"] instance=ExtResource("2_3e10n")]
