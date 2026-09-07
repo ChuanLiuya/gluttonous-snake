@@ -14,6 +14,7 @@ script = ExtResource("2_saf8f")
 
 [node name="StateMachine" type="Node" parent="." unique_id=1493911876]
 script = ExtResource("3_iv478")
+initial_state = "Move"
 
 [node name="Move" type="Node" parent="StateMachine" unique_id=1411147447]
 script = ExtResource("4_q34ia")

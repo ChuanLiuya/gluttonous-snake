@@ -15,6 +15,7 @@ func _ready() -> void:
 		if child is State:
 			child.init(_actor, self)
 			_states[child.name] = child
+			print(_actor.name, '挂载了', child.name, '状态！')
 	current_state = _states[initial_state]
 	current_state.enter()
 

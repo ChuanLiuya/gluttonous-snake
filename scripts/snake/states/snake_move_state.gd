@@ -11,4 +11,6 @@ func process(_delta: float) -> void:
 	return
 
 func physics_process(_delta: float) -> void:
-	return
+	get_actor().direction = Input.get_vector("left", "right", "up", "down")
+	print(get_actor().direction)
+	get_actor().position += get_actor().speed * _delta * get_actor().direction
